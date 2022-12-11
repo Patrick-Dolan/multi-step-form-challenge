@@ -66,23 +66,29 @@
 
   <!-- Step 2 start -->
 
-  Select your plan
-  You have the option of monthly or yearly billing.
-
-  Arcade
-  $9/mo
-
-  Advanced
-  $12/mo
-
-  Pro
-  $15/mo
-
-  Monthly
-  Yearly
-
-  Go Back
-  Next Step
+  <section class="form-card">
+    <h1 class="form-card__title">Select your plan</h1>
+    <p class="form-card__description">You have the option of monthly or yearly billing.</p>
+    <form id="form-step-two">
+      <input type="radio" name="plan" id="">
+        <span class="form-card__header">Arcade</span>
+        <span class="form-card__details">$9/mo</span>
+      </input>
+      <input type="radio" name="plan" id="">
+        <span class="form-card__header">Advanced</span>
+        <span class="form-card__details">$12/mo</span>
+      </input>
+      <input type="radio" name="plan" id="">
+        <span class="form-card__header">Pro</span>
+        <span class="form-card__details">$15/mo</span>
+      </input>
+      <input type="radio" name="planFrequency" id="">Monthly</input>
+      <input type="radio" name="planFrequency" id="">Yearly</input>
+      
+      <input type="button" value="Go Back"></input>
+      <input type="submit" value="Next Step"></input>
+    </form>
+  </section>
 
   <!-- Step 2 end -->
 
