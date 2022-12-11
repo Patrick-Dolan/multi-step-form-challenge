@@ -22,6 +22,41 @@ p {
   font-size: 16px;
 }
 
+/* Mobile Sidebar */
+
+/* Desktop Sidebar */
+
+#desktop-sidebar {
+  display: none;
+}
+
+/* Step 1 */
+
+/* Step 2 */
+
+#step-two {
+  display: none;
+}
+
+/* Step 3 */
+
+#step-three {
+  display: none;
+}
+
+/* Step 4 */
+
+#step-four {
+  display: none;
+}
+
+/* Step 5 */
+
+#step-five {
+  display: none;
+}
+
+
 /* Attribution */
 
 .attribution { 
