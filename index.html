@@ -23,17 +23,19 @@
   <!-- Sidebar start -->
 
   <aside id="mobile-sidebar">
-    <div class="mobile-form-step">
-      <p>1</p>
-    </div>
-    <div class="mobile-form-step">
-      <p>2</p>
-    </div>
-    <div class="mobile-form-step">
-      <p>3</p>
-    </div>
-    <div class="mobile-form-step">
-      <p>4</p>
+    <div class="container">
+      <div class="mobile-form-step">
+        <p>1</p>
+      </div>
+      <div class="mobile-form-step">
+        <p>2</p>
+      </div>
+      <div class="mobile-form-step">
+        <p>3</p>
+      </div>
+      <div class="mobile-form-step">
+        <p>4</p>
+      </div>
     </div>
   </aside>
 
@@ -60,19 +62,21 @@
 
   <!-- Step 1 start -->
 
-  <section class="form-card" id="step-one">
-    <h1 class="form-card__title">Personal info</h1>
-    <p class="form-card__description">Please provide your name, email address, and phone number.</p>
-    <form id="form-step-one">
-      <label for="name" class="form-card__input-label">Name</label>
-      <input type="text" name="name" placeholder="e.g. Stephen King" id="name" class="form-card__text-input"></input>
-      <label for="email" class="form-card__input-label">Email Address</label>
-      <input type="email" name="email" placeholder="e.g. stephenking@lorem.com" id="email" class="form-card__text-input"></input>
-      <label for="phoneNumber" class="form-card__input-label">Phone Number</label>
-      <input type="tel" name="phoneNumber" placeholder="e.g. +1 234 567 890" id="phoneNumber" class="form-card__text-input"></input>
-      <input type="submit" value="Next Step"></input>
-    </form>
-  </section>
+  <div class="container">
+    <section class="form-card" id="step-one">
+      <h1 class="form-card__title">Personal info</h1>
+      <p class="form-card__description">Please provide your name, email address, and phone number.</p>
+      <form id="form-step-one">
+        <label for="name" class="form-card__input-label">Name</label><br>
+        <input type="text" name="name" placeholder="e.g. Stephen King" id="name" class="form-card__text-input"></input><br>
+        <label for="email" class="form-card__input-label">Email Address</label><br>
+        <input type="email" name="email" placeholder="e.g. stephenking@lorem.com" id="email" class="form-card__text-input"></input><br>
+        <label for="phoneNumber" class="form-card__input-label">Phone Number</label><br>
+        <input type="tel" name="phoneNumber" placeholder="e.g. +1 234 567 890" id="phoneNumber" class="form-card__text-input"></input><br>
+        <input type="submit" value="Next Step"></input><br>
+      </form>
+    </section>
+  </div>
 
   <!-- Step 1 end -->
 
@@ -99,8 +103,6 @@
       </input>
       <input type="radio" name="planFrequency" id="">Monthly</input>
       <input type="radio" name="planFrequency" id="">Yearly</input>
-      
-      
     </form>
   </section>
 
