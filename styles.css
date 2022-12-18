@@ -15,6 +15,7 @@ body {
   background-image: url("./assets/images/bg-sidebar-mobile.svg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+  background-color: hsl(217, 100%, 97%);
 }
 
 img {
@@ -33,10 +34,80 @@ p {
 
 /* Mobile Sidebar */
 
+#mobile-sidebar {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  color: #fff;
+  padding: 1.25em 0 2em 0;
+}
+
+.mobile-form-step {
+  border: solid #fff 1px;
+  border-radius: 50%;
+  margin: 0;
+  padding: .35em;
+  height: 2em;
+  width: 2em;
+  text-align: center;
+  font-weight: 500;
+}
+
 /* Desktop Sidebar */
 
 #desktop-sidebar {
   display: none;
+}
+
+/* Form Card */
+
+.form-card {
+  background-color: #fff;
+  color:hsl(213, 96%, 18%);
+  padding: 1em 1.5em;
+  border-radius: 3%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.form-card__title {
+  margin: 0;
+  padding-top: .5rem;
+}
+
+.form-card__description {
+  color: hsl(231, 11%, 63%);
+  font-weight: 500;
+}
+
+.form-card__input-label {
+  font-weight: 500;
+}
+
+.form-card__text-input {
+  width: 100%;
+  padding: .8em;
+  margin-top: .25em;
+  margin-bottom: 1em;
+}
+
+.form-card__footer {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding: 4%;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+}
+
+.next-step-btn {
+  background-color: hsl(213, 96%, 18%);
+  color: #fff;
+  padding: 1em;
+  border-radius: 5%;
+  border: none;
+  margin-left: auto;
+  font-weight: 700;
 }
 
 /* Step 1 */
@@ -44,25 +115,25 @@ p {
 /* Step 2 */
 
 #step-two {
-  display: block;
+  display: none;
 }
 
 /* Step 3 */
 
 #step-three {
-  display: block;
+  display: none;
 }
 
 /* Step 4 */
 
 #step-four {
-  display: block;
+  display: none;
 }
 
 /* Step 5 */
 
 #step-five {
-  display: block;
+  display: none;
 }
 
 

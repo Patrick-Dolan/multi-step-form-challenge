@@ -25,23 +25,15 @@
 
   <!-- Sidebar start -->
 
-  <aside id="mobile-sidebar">
-    <div class="container">
-      <div class="mobile-form-step">
-        <p>1</p>
-      </div>
-      <div class="mobile-form-step">
-        <p>2</p>
-      </div>
-      <div class="mobile-form-step">
-        <p>3</p>
-      </div>
-      <div class="mobile-form-step">
-        <p>4</p>
-      </div>
-    </div>
-  </aside>
-
+  <div class="container">
+    <aside id="mobile-sidebar">
+        <p class="mobile-form-step">1</p>
+        <p class="mobile-form-step">2</p>
+        <p class="mobile-form-step">3</p>
+        <p class="mobile-form-step">4</p>
+    </aside>
+  </div>
+    
   <aside id="desktop-sidebar">
     <div class="form-step">
       <p class="form-step__step-number-title">Step 1</p>
@@ -67,16 +59,20 @@
   <!-- Step 1 start -->
   
   <div class="container">
-    <section class="form-card" id="step-one">
-      <h1 class="form-card__title">Personal info</h1>
-      <p class="form-card__description">Please provide your name, email address, and phone number.</p>
-      <label for="name" class="form-card__input-label">Name</label><br>
-      <input type="text" name="name" placeholder="e.g. Stephen King" id="name" class="form-card__text-input"></input><br>
-      <label for="email" class="form-card__input-label">Email Address</label><br>
-      <input type="email" name="email" placeholder="e.g. stephenking@lorem.com" id="email" class="form-card__text-input"></input><br>
-      <label for="phoneNumber" class="form-card__input-label">Phone Number</label><br>
-      <input type="tel" name="phoneNumber" placeholder="e.g. +1 234 567 890" id="phoneNumber" class="form-card__text-input"></input><br>
-      <button type="button" value="Next Step">Next Step</button><br>
+    <section id="step-one">
+      <div class="form-card">
+        <h1 class="form-card__title">Personal info</h1>
+        <p class="form-card__description">Please provide your name, email address, and phone number.</p>
+        <label for="name" class="form-card__input-label">Name</label><br>
+        <input type="text" name="name" placeholder="e.g. Stephen King" id="name" class="form-card__text-input"></input><br>
+        <label for="email" class="form-card__input-label">Email Address</label><br>
+        <input type="email" name="email" placeholder="e.g. stephenking@lorem.com" id="email" class="form-card__text-input"></input><br>
+        <label for="phoneNumber" class="form-card__input-label">Phone Number</label><br>
+        <input type="tel" name="phoneNumber" placeholder="e.g. +1 234 567 890" id="phoneNumber" class="form-card__text-input"></input><br>
+      </div>
+      <div class="form-card__footer">
+        <button type="button" class="next-step-btn">Next Step</button>
+      </div>
     </section>
   </div>
 
@@ -178,9 +174,9 @@
 
   <!-- Step 5 end -->
   
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://patrickdolan.dev/" target="_blank">Patrick Dolan</a>.
-  </div>
+  </div> -->
 </body>
 </html>
