@@ -109,6 +109,11 @@ p {
   margin-left: auto;
   font-weight: 700;
 }
+.go-back-btn {
+  border: none;
+  background-color: #fff;
+  text-decoration: underline;
+}
 
 /* Step 1 */
 

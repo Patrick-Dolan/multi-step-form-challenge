@@ -58,8 +58,8 @@
   <form id="form">
   <!-- Step 1 start -->
   
-  <div class="container">
-    <section id="step-one">
+  <section id="step-one">
+    <div class="container">
       <div class="form-card">
         <h1 class="form-card__title">Personal info</h1>
         <p class="form-card__description">Please provide your name, email address, and phone number.</p>
@@ -71,88 +71,99 @@
         <input type="tel" name="phoneNumber" placeholder="e.g. +1 234 567 890" id="phoneNumber" class="form-card__text-input"></input><br>
       </div>
       <div class="form-card__footer">
-        <button type="button" class="next-step-btn">Next Step</button>
+        <button type="button" class="next-step-btn" id="next-step-1">Next Step</button>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 
   <!-- Step 1 end -->
 
   <!-- Step 2 start -->
 
-  <div class="container">
-    <section class="form-card" id="step-two">
-      <h1 class="form-card__title">Select your plan</h1>
-      <p class="form-card__description">You have the option of monthly or yearly billing.</p>
-      <input type="radio" name="plan" id="arcade" value="arcade">
-        <img src="./assets/images/icon-arcade.svg" alt="Arcade Icon">
-        <span class="form-card__header">Arcade</span>
-        <span class="form-card__details">$9/mo</span>
-      </input><br>
-      <input type="radio" name="plan" id="advanced" value="advanced">
-      <img src="./assets/images/icon-advanced.svg" alt="Advanced Icon">
-        <span class="form-card__header">Advanced</span>
-        <span class="form-card__details">$12/mo</span>
-      </input><br>
-      <input type="radio" name="plan" id="pro" value="pro">
-        <img src="./assets/images/icon-pro.svg" alt="Pro Icon">
-        <span class="form-card__header">Pro</span>
-        <span class="form-card__details">$15/mo</span>
-      </input><br>
-      <input type="radio" name="planFrequency" id="monthly" value="monthly">Monthly</input>
-      <input type="radio" name="planFrequency" id="yearly" value="yearly">Yearly</input>
-      <br>
-      <button type="button" value="Go Back">Go Back</button>
-      <button type="button" value="Next Step">Next Step</button><br>
-    
-    </section>
-  </div>
+  <section id="step-two">
+    <div class="container">
+      <div class="form-card">
+        <h1 class="form-card__title">Select your plan</h1>
+        <p class="form-card__description">You have the option of monthly or yearly billing.</p>
+        <input type="radio" name="plan" id="arcade" value="arcade">
+          <img src="./assets/images/icon-arcade.svg" alt="Arcade Icon">
+          <span class="form-card__header">Arcade</span>
+          <span class="form-card__details">$9/mo</span>
+        </input><br>
+        <input type="radio" name="plan" id="advanced" value="advanced">
+        <img src="./assets/images/icon-advanced.svg" alt="Advanced Icon">
+          <span class="form-card__header">Advanced</span>
+          <span class="form-card__details">$12/mo</span>
+        </input><br>
+        <input type="radio" name="plan" id="pro" value="pro">
+          <img src="./assets/images/icon-pro.svg" alt="Pro Icon">
+          <span class="form-card__header">Pro</span>
+          <span class="form-card__details">$15/mo</span>
+        </input><br>
+        <input type="radio" name="planFrequency" id="monthly" value="monthly">Monthly</input>
+        <input type="radio" name="planFrequency" id="yearly" value="yearly">Yearly</input>
+        <br>
+      </div>
+      <div class="form-card__footer">
+        <button type="button" class="go-back-btn" id="go-back-1">Go Back</button>
+        <button type="button" class="next-step-btn" id="next-step-2">Next Step</button>
+      </div>
+    </div>
+  </section>
 
   <!-- Step 2 end -->
 
   <!-- Step 3 start -->
 
-  <div class="container">
-    <section class="form-card" id="step-three">
-      <h1 class="form-card__title">Pick add-ons</h1>
-      <p class="form-card__description">Add-ons help enhance your gaming experience.</p>
-      <div id="addons-checkbox">
-        <input type="checkbox" class="addons" name="addons" id="onlineService" value="Online Service">
-          <span class="form-card__header">Online service</span>
-          <span class="form-card__details">Access to multiplayer games</span>
-          <span class="form-card__price">+$1/mo</span>
-        </input><br>
-        <input type="checkbox" class="addons" name="addons" id="largerStorage" value="Larger Storage">
-          <span class="form-card__header">Larger storage</span>
-          <span class="form-card__details">Extra 1TB of cloud save</span>
-          <span class="form-card__price">+$2/mo</span>
-        </input><br>
-        <input type="checkbox" class="addons" name="addons" id="customizableProfile" value="Customizable Profile">
-          <span class="form-card__header">Customizable Profile</span>
-          <span class="form-card__details">Custom theme on your profile</span>
-          <span class="form-card__price">+$2/mo</span>
-        </input><br>
-        <br>
+  <section id="step-three">
+    <div class="container">
+      <div class="form-card">
+        <h1 class="form-card__title">Pick add-ons</h1>
+        <p class="form-card__description">Add-ons help enhance your gaming experience.</p>
+        <div id="addons-checkbox">
+          <input type="checkbox" class="addons" name="addons" id="onlineService" value="Online Service">
+            <span class="form-card__header">Online service</span>
+            <span class="form-card__details">Access to multiplayer games</span>
+            <span class="form-card__price">+$1/mo</span>
+          </input><br>
+          <input type="checkbox" class="addons" name="addons" id="largerStorage" value="Larger Storage">
+            <span class="form-card__header">Larger storage</span>
+            <span class="form-card__details">Extra 1TB of cloud save</span>
+            <span class="form-card__price">+$2/mo</span>
+          </input><br>
+          <input type="checkbox" class="addons" name="addons" id="customizableProfile" value="Customizable Profile">
+            <span class="form-card__header">Customizable Profile</span>
+            <span class="form-card__details">Custom theme on your profile</span>
+            <span class="form-card__price">+$2/mo</span>
+          </input><br>
+          <br>
+        </div>
       </div>
-      <button type="button" value="Go Back">Go Back</button>
-      <button type="button" value="Next Step">Next Step</button><br>
-    </section>
-  </div>
+      <div class="form-card__footer">
+        <button type="button" class="go-back-btn" id="go-back-2">Go Back</button>
+        <button type="button" class="next-step-btn" id="next-step-3">Next Step</button>
+      </div>
+    </div>
+  </section>
 
   <!-- Step 3 end -->
 
   <!-- Step 4 start -->
 
-  <div class="container">
-    <section class="form-card" id="step-four">
-      <h1 class="form-card__title">Finishing up</h1>
-      <p class="form-card__description">Double-check everything looks OK before confirming.</p>
-      <!-- Dynamically add subscription and add-on selections here -->
-      <p class="form-card__details">Total (per month/year)</p>
-      <button type="button" value="Go Back">Go Back</button>
-      <input type="submit" value="Confirm"></input>
-    </section>
-  </div>
+  <section id="step-four">
+    <div class="container">
+      <div class="form-card">
+        <h1 class="form-card__title">Finishing up</h1>
+        <p class="form-card__description">Double-check everything looks OK before confirming.</p>
+        <!-- Dynamically add subscription and add-on selections here -->
+        <p class="form-card__details">Total (per month/year)</p>
+      </div>
+      <div class="form-card__footer">
+        <button type="button" class="go-back-btn" id="go-back-3">Go Back</button>
+        <input type="submit" class="next-step-btn" value="Confirm"></input>
+      </div>
+    </div>
+  </section>
 
   <!-- Step 4 end -->
 

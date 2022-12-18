@@ -18,4 +18,19 @@ $(() => {
     }).get();
     console.log(addons2)
   });
+
+  $("#next-step-1, #go-back-1").on("click", () => {
+    $("#step-one").toggle();
+    $("#step-two").toggle();
+  });
+
+  $("#next-step-2, #go-back-2").on("click", () => {
+    $("#step-two").toggle();
+    $("#step-three").toggle();
+  });
+
+  $("#next-step-3, #go-back-3").on("click", () => {
+    $("#step-three").toggle();
+    $("#step-four").toggle();
+  });
 }) 
