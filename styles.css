@@ -44,25 +44,25 @@ p {
 /* Step 2 */
 
 #step-two {
-  display: none;
+  display: block;
 }
 
 /* Step 3 */
 
 #step-three {
-  display: none;
+  display: block;
 }
 
 /* Step 4 */
 
 #step-four {
-  display: none;
+  display: block;
 }
 
 /* Step 5 */
 
 #step-five {
-  display: none;
+  display: block;
 }
 
 
