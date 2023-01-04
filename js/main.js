@@ -1,27 +1,28 @@
 import { Order } from "./Order.js";
 
 $(() => {
-  let order = new Order();
-  console.log(order);
-
   $("form#form").submit((e) => {
     e.preventDefault();
-    console.log(`Form: ${$("input#name").val()}`);
-    console.log(`Form: ${$("input#email").val()}`);
-    console.log(`Form: ${$("input#phoneNumber").val()}`);
+    let order = new Order();
+
+    // Contact Info
+    order.name = $("input#name").val();
+    order.email = $("input#email").val();
+    order.phoneNumber = $("input#phoneNumber").val();
     
     // Plan selection
     let plan = $("input[name='plan']:checked").val();
     let planFrequency = $("input[name='planFrequency']:checked").val();
-    console.log(plan);
-    console.log(planFrequency);
-
+    order.selectPlan(plan, planFrequency);
+    
     // Add-ons
-
-    const addons2 = $('input[type=checkbox]:checked').map((_, e) => {
+    const addons = $('input[type=checkbox]:checked').map((_, e) => {
       return $(e).val();
     }).get();
-    console.log(addons2)
+    order.selectAddons(addons);
+
+    // TODO: Remove following console log before pushing final project
+    console.log(order)
   });
 
   // Multi-stage buttons
