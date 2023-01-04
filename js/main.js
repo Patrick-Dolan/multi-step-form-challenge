@@ -1,4 +1,9 @@
+import { Order } from "./Order.js";
+
 $(() => {
+  let order = new Order();
+  console.log(order);
+
   $("form#form").submit((e) => {
     e.preventDefault();
     console.log(`Form: ${$("input#name").val()}`);
@@ -18,6 +23,8 @@ $(() => {
     }).get();
     console.log(addons2)
   });
+
+  // Multi-stage buttons
 
   $("#next-step-1, #go-back-1").on("click", () => {
     $("#step-one").toggle();
